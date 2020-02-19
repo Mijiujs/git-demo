@@ -49,6 +49,7 @@ git remote 查看远程库
 git remote -v 更详细的查看远程库，可以知道哪些可以推拉
 git push -u origin master 第一次推送master分支的所有内容
 git push origin <branch> 推送某分支,若失败先git pull抓取远程的新提交
+git push origin -d <remote-branch> 删除远程分支
 git checkout -b <branch> origin/branch-name 新建本地分支并和远程分支关联
 git branch --set-upstream <branch> origin/branch-name 使本地已有分支和远程分支关联
 
