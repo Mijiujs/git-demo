@@ -22,3 +22,8 @@ git remote add origin <address> 关联远程库
 git push -u origin master 第一次推送master分支的所有内容
 git push origin master 推送最新修改
 git clone <address> 从远程库克隆
+
+git branch 查看分支
+git branch <dev> 创建分支
+git checkout <dev> 切换分支
+git checkout -b <dev> 创建并切换到分支
