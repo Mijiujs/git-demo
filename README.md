@@ -14,7 +14,7 @@ git add . 当前目录都提交
 git commit -m <message> 暂存区提交到仓库
 git commit --amend -m <message> 替代上次提交，改写上一次commit信息
 git checkout -- <file> 丢弃工作区文件的修改
-git reset HEAD <file> 丢弃暂存区文件的修改
+git reset HEAD 丢弃暂存区的修改 git reset HEAD <file>
 git rm <file> 删除文件，加-f强制删除
 git mv <name1> <name2> 文件换名字并且提交到暂存区
 
