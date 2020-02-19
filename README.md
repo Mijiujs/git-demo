@@ -45,17 +45,19 @@ git stash drop 删除
 git stash pop 恢复+删除
 
 远程仓库
-git remote add origin <url> 关联远程库
+git remote add <remote-origin> <url> 关联远程库
+git remote rm <remote-origin> 去掉跟远程库的关联
 git remote 查看远程库
 git remote -v 更详细的查看远程库，可以知道哪些可以推拉
+git remote update origin --prune 本地获取远程分支情况
 
 git push <远程主机名> <本地分支名>:<远程分支名> 推送某分支,若失败先git pull抓取远程的新提交
 git push origin -d <remote-branch> 删除远程分支
 git push -u origin master 将本地master分支推送到origin主机，同时制定origin为默认主机
 
-git push --set-upstream origin test（本地有，远程无）
+git push --set-upstream origin <branch> 远程添加分支（本地有，远程无）
 git branch <branch> origin/branch-name 新建本地分支并和远程分支关联（本地无，远程有）
-git branch --set-upstream <branch> origin/branch-name 使本地已有分支和远程分支关联（本地有，远程有）
+git branch --set-upstream-to=origin/branch-name <branch> 使本地已有分支和远程分支关联（本地有，远程有）
 
 标签
 git tag <tag> 为当前commit打标签
@@ -68,8 +70,5 @@ git push origin <tagname> 推送一个本地标签
 git push origin --tags 推送全部未推送过的本地标签
 git push origin :refs/tags/<tagname> 删除一个远程标签
 
-远程创建分支,本地看不到最新分支
-git remote update origin --prune
 
-11
-22
+
