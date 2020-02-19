@@ -2,10 +2,10 @@
 git 分布式版本控制系统
 
 初始化
-git init 创建git仓库
 git config 查看git配置
 gif config --global user.name <name>
 git config --global user.email <email>
+git init 创建git仓库
 git clone <url> 从远程库克隆
 
 提交撤销提交
