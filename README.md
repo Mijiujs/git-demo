@@ -63,3 +63,6 @@ git show <tag> 看具体标签的详情
 git push origin <tagname> 推送一个本地标签
 git push origin --tags 推送全部未推送过的本地标签
 git push origin :refs/tags/<tagname> 删除一个远程标签
+
+远程创建分支,本地看不到最新分支
+git remote update origin --prune
