@@ -36,11 +36,13 @@ git stash pop 恢复+删除
 
 git cherry-pick <c commit-id> <d commit-id> 把多个不同分支的提交合并到当前分支
 
-git remote 查看远程库
-git remote -v 更详细的查看远程库，可以知道哪些可以推拉
 
 远程仓库
 git remote add origin <address> 关联远程库
 git push -u origin master 第一次推送master分支的所有内容
 git push origin master 推送最新修改
 git clone <address> 从远程库克隆
+
+git remote 查看远程库
+git remote -v 更详细的查看远程库，可以知道哪些可以推拉
+git push origin <dev> 推送某分支
