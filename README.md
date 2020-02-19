@@ -25,5 +25,7 @@ git clone <address> 从远程库克隆
 
 git branch 查看分支
 git branch <dev> 创建分支
-git checkout <dev> 切换分支
-git checkout -b <dev> 创建并切换到分支
+git branch -d <dev> 删除分支
+git checkout <dev> 或 git switch <dev> 切换分支
+git checkout -b <dev> 或 git switch -c <dev> 创建并切换到分支
+git merge <dev> 把分支合并到当前分支
