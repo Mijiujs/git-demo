@@ -16,3 +16,9 @@ git reflog 查看命令历史
 git checkout -- <filename> 丢弃工作区文件的修改
 git reset HEAD <filename> 丢弃暂存区文件的修改
 git rm <filename> 删除文件，加-f强制删除
+
+远程仓库
+git remote add origin <address> 关联远程库
+git push -u origin master 第一次推送master分支的所有内容
+git push origin master 推送最新修改
+git clone <address> 从远程库克隆
