@@ -12,3 +12,7 @@ git diff 查看修改内容
 git log 查看提交记录
 git reset --hard <commit_id> 回到某个版本 HEAD表示当前版本，HEAD^^表示上上个版本,HEAD~100回到上100个版本
 git reflog 查看命令历史
+
+git checkout -- <filename> 丢弃工作区文件的修改
+git reset HEAD <filename> 丢弃暂存区文件的修改
+git rm <filename> 删除文件，加-f强制删除
