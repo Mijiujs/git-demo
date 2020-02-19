@@ -37,7 +37,7 @@ git merge <dev> 把分支合并到当前分支
 git cherry-pick <c commit-id> <d commit-id> 把多个不同分支的提交合并到当前分支
 
 储藏
-git stash 储藏
+git stash save <msg>储藏
 git stash list 查看储藏区
 git stash apply 恢复
 git stash drop 删除
