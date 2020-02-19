@@ -50,12 +50,12 @@ git remote 查看远程库
 git remote -v 更详细的查看远程库，可以知道哪些可以推拉
 
 git push <远程主机名> <本地分支名>:<远程分支名> 推送某分支,若失败先git pull抓取远程的新提交
-git push -u origin master 将本地master分支推送到origin主机，同时制定origin为默认主机
-git push --set-upstream origin test
 git push origin -d <remote-branch> 删除远程分支
+git push -u origin master 将本地master分支推送到origin主机，同时制定origin为默认主机
 
-git branch <branch> origin/branch-name 新建本地分支并和远程分支关联
-git branch --set-upstream <branch> origin/branch-name 使本地已有分支和远程分支关联
+git push --set-upstream origin test（本地有，远程无）
+git branch <branch> origin/branch-name 新建本地分支并和远程分支关联（本地无，远程有）
+git branch --set-upstream <branch> origin/branch-name 使本地已有分支和远程分支关联（本地有，远程有）
 
 标签
 git tag <tag> 为当前commit打标签
