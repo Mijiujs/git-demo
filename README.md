@@ -21,7 +21,8 @@ git mv <name1> <name2> 文件换名字并且提交到暂存区
 状态历史
 git status 显示文件的变更信息
 git diff 查看修改内容
-git log 查看当前分支commit历史 --stat 以及每次发生变更的文件
+git log 查看当前分支commit历史 --stat 以及每次发生变更的文件 
+git log --oneline 
 git reset --hard <commit_id> 回到某个版本 HEAD表示当前版本，HEAD^^表示上上个版本,HEAD~100回到上100个版本
 git log --graph 查看分支合并图
 git reflog 查看命令历史
