@@ -13,9 +13,10 @@ git clone <url> 从远程库克隆
 git add <file1> <file2>工作区添加到暂存区
 git add . 当前目录都提交
 git commit -m <message> 暂存区提交到仓库
-git checkout -- <filename> 丢弃工作区文件的修改
-git reset HEAD <filename> 丢弃暂存区文件的修改
-git rm <filename> 删除文件，加-f强制删除
+git checkout -- <file> 丢弃工作区文件的修改
+git reset HEAD <file> 丢弃暂存区文件的修改
+git rm <file> 删除文件，加-f强制删除
+git mv <name1> <name2>
 
 状态历史
 git status 查看工作区+暂存区状态
