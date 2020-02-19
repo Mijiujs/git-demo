@@ -2,7 +2,6 @@
 git 分布式版本控制系统
 
 初始化
-
 git init 创建git仓库
 git config 查看git配置
 gif config --global user.name <name>
