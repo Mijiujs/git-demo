@@ -44,7 +44,7 @@ git stash drop 删除
 git stash pop 恢复+删除
 
 远程仓库
-git remote add origin <address> 关联远程库
+git remote add origin <url> 关联远程库
 git remote 查看远程库
 git remote -v 更详细的查看远程库，可以知道哪些可以推拉
 git push -u origin master 第一次推送master分支的所有内容
