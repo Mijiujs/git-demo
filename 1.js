@@ -1,3 +1,3 @@
-let a
-let b
-console.log(100)
+let a = 100
+let b = 1000
+let c = a + b
